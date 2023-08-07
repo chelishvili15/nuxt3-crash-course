@@ -26,6 +26,10 @@
         <pre>
             {{ user }}
         </pre>
+
+        <div>
+            {{ hi.greeting }}
+        </div>
     </div>
 </template>
 
@@ -43,6 +47,8 @@ onMounted(() => {
 const { data: users2 } = await useFetch('https://jsonplaceholder.typicode.com/users')
 
 const { data: user } = await useFetch('https://jsonplaceholder.typicode.com/users/1', { pick: ['id', 'name', 'email'] }) 
+
+const { data: hi } = await useFetch('/api/hello') 
 
 </script>
 
