@@ -1,12 +1,12 @@
 <template>
-    <Title>Contact page</Title>
-    <div>
-        this is contact page
+    <Title>Contact | {{ title }}</Title>
+    <div class="container mx-auto w-1/2 py-8">
+        contact ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe fugiat tempora qui officia iste odit necessitatibus magnam itaque! Aliquid, quos quo ipsam, quibusdam magnam reiciendis nesciunt accusamus id facere, officiis optio dolores. Repudiandae maiores quam, accusamus sed iste tempora laudantium corporis odio placeat omnis est quasi magnam. Asperiores maiores, placeat dicta, hic facere, corporis laboriosam libero fuga vel doloremque iste numquam? Laboriosam quibusdam mollitia iste voluptate eveniet illum iure excepturi accusantium, expedita blanditiis quis consequatur quo ea doloribus reprehenderit harum vitae eligendi sunt unde porro nisi necessitatibus velit! Illum pariatur mollitia aperiam dicta nisi nam dolorum ab! Quasi odio illo aspernatur quidem maiores, aliquid nam assumenda fugit temporibus voluptatum accusamus aut rem, iste unde porro ratione, nihil praesentium vitae amet suscipit dolorum officia excepturi. Placeat unde quibusdam quaerat tenetur voluptas quae numquam dolorem deserunt suscipit mollitia libero officia repudiandae expedita est minus iure maiores earum dignissimos quasi, velit veniam fugiat et veritatis reiciendis? Sunt dolor praesentium eligendi, eius consequuntur perspiciatis modi magni corrupti repellendus sit aliquam soluta omnis error dicta quia mollitia repellat? Unde deleniti numquam sint laudantium ipsum perspiciatis, quis, consectetur nostrum enim illum amet nam ipsa laboriosam necessitatibus eius id. Minima earum obcaecati nobis vitae quia iste ullam ducimus nisi. Autem aspernatur est saepe, sequi cupiditate distinctio doloribus dolore, voluptas maiores accusamus et. Quo, id. Necessitatibus qui aliquam magni beatae id itaque debitis voluptatem distinctio expedita architecto unde fugiat facere suscipit ducimus amet magnam quia libero nam quibusdam, ullam dolores rerum quasi ipsum. Saepe aliquid minus sint ipsam dolor deserunt laborum. Sit sed non illum perspiciatis quos neque, aspernatur temporibus rem, dolore minima suscipit magni doloribus laboriosam excepturi beatae eum alias ex cumque a quasi nihil at minus quidem accusantium! Ipsum reprehenderit dignissimos ab delectus quos ducimus fugit eos alias, blanditiis, sapiente illum labore quas id error saepe vero perferendis, sit repellendus quasi? Hic provident excepturi consequuntur dolor quod possimus ipsum. Quibusdam, omnis consectetur, ullam sequi, sunt iure enim eveniet repudiandae fuga deleniti totam maxime nostrum doloremque quia numquam. Beatae minima, ipsa eius dolor animi, tempore earum vero reprehenderit reiciendis enim porro sit qui fugiat nostrum itaque. Incidunt provident ducimus odit aliquid tempora. Vitae inventore assumenda consequatur aliquid. Perspiciatis architecto ipsam dicta iusto cumque saepe impedit soluta, eligendi repudiandae error asperiores. Porro officiis vitae consequatur qui obcaecati adipisci commodi illo, nulla, animi voluptatum facilis doloremque enim hic magnam modi itaque. Facere corrupti excepturi blanditiis illo, perspiciatis eos?
     </div>
 </template>
 
 <script setup>
-
+const title = useState('title')
 </script>
 
 <style lang="scss" scoped>
