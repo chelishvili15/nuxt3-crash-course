@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorePostRequest;
+use Illuminate\Http\Request;
 use App\Http\Requests\UpdatePostRequest;
 use App\Models\Post;
 
@@ -13,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return Post::latest()->get();
     }
 
     /**
@@ -27,9 +27,18 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePostRequest $request)
+    public function store(Request $request)
     {
-        //
+        $request -> validate([
+            'title' => 'required|min:3',
+            'body' => 'required|min:3',
+        ]);
+
+        return Post::create([
+            'user_id' => 1,
+            'title' => $request->title,
+            'body' => $request->body,
+        ]);
     }
 
     /**
@@ -37,7 +46,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return $post;
     }
 
     /**
