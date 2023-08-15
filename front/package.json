@@ -10,10 +10,14 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@types/node": "^18.17.1",
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.6.5",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
   }
 }

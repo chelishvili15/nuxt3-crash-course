@@ -13,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return Post::latest()->get();
+        return Post::with('user:id,name')->latest()->get();
     }
 
     /**
@@ -46,7 +46,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return $post;
+        return $post->load('user:id,name');
     }
 
     /**
